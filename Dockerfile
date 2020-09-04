@@ -1,3 +1,4 @@
 FROM nginx
-COPY ./index.html /usr/share/nginx/html/index.html
+COPY ./dist/ /usr/share/nginx/html/
+COPY ./hello-docker.conf /etc/nginx/conf.d/hello-docker.conf
 EXPOSE 80
